@@ -1,0 +1,45 @@
+// Override default variables before the import
+$body-bg: #000;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+.btn{
+    display: block;
+    background: #0b9496;
+    font-size: 38px;
+    padding: 11px;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e9eded;
+    cursor: pointer;
+    margin-top: 40px;
+    height: 80px;
+    border-radius: 30px;
+
+}
+
+.background {
+    background: #eaeaea url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+        // background: #eaeaea url("/public/images/background.jpg");
+        background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
+.main-container {
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    min-height: 100%;
+    max-width: 70%;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }

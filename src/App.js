@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/logo-header.png';
 import './App.css';
-
+import './custom.scss';
+// import Button from '../src/components/button';
+import Button from 'react-bootstrap/Button';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+      <div className="background">
+        
+        <div className="main-container">
+        <div>
+        </div>
+          <Button variant="primary">Primary</Button>
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -19,7 +21,7 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+       </div>
       </div>
     );
   }
