@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './images/logo-header.png';
+import logo from './images/logo.png';
 import './App.css';
 import './custom.scss';
 // import Button from '../src/components/button';
@@ -11,8 +11,9 @@ class App extends Component {
         
         <div className="main-container">
         <div>
+        <img src={logo} alt="Logo" />
         </div>
-          <Button variant="primary">Primary</Button>
+          <Button variant="primary">أقتراح</Button>
           <a
             className="App-link"
             href="https://reactjs.org"
