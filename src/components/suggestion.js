@@ -26,8 +26,13 @@ export default class Suggestion extends Component {
         {this.state.shop ? (
           <div>
             <h1> {this.state.shop.name}</h1>
-          </div>
-        ) : (
+         
+            {/* <button className="btn" onClick={() => this.changeActivePage('Suggestion')} > <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button> */}
+
+         </div>
+
+         
+         ) : (
           ''
         )}
       </div>

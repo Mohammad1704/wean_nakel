@@ -13,7 +13,7 @@ export default class App extends Component {
     activePage: 'main'
   };
 
-  changeAcrivePage = activePage => {
+  changeActivePage  = activePage => {
     this.setState({ activePage });
   };
 
@@ -23,12 +23,12 @@ export default class App extends Component {
         <div className="main-container">
           {this.state.activePage === 'main' ? (
             <div>
-              {/* <div>
+              <div>
                 <img className="logo" src={logo} alt="Logo" />
-              </div> */}
-              <div
+              </div>
+              {/* <div
                 className="btn btn-primary"
-                onClick={() => this.changeAcrivePage('Suggestion')}
+                onClick={() => this.changeActivePage ('Suggestion')}
               >
                 {' '}
                 <div className="lds-ellipsis">
@@ -38,17 +38,22 @@ export default class App extends Component {
                   <div />
                 </div>{' '}
                 أقتراح
-              </div>
-            </div>
-          ) : (
-            ''
-          )}
+              </div> */}
+           
+                <button className="btn" onClick={() => this.changeActivePage ('Suggestion')} > <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
+
+                </div>
+                ) : ( '' )}
 
           {this.state.activePage === 'Suggestion' ? (
-            <Suggestion changeAcrivePage={this.changeAcrivePage} />
-          ) : (
-            ''
-          )}
+      <React.Fragment>
+
+            <Suggestion changeActivePage ={this.changeActivePage } />
+            <button className="btn" onClick={() => this.changeActivePage ('Suggestion')} > <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
+
+            </React.Fragment>
+
+          ) : ( '')}
         </div>
       </div>
     );
