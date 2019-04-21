@@ -1,5 +1,5 @@
 // Override default variables before the import
-$body-bg: #000;
+$body-bg: rgb(199, 196, 196);
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
@@ -125,7 +125,11 @@ body{
   }
 
 
+
+  //MAP 
   .MapPage {
     background: #e9eded;  // أحذف ذا 
 
   }
+  .mapouter{position:relative;text-align:right;height:500px;width:640px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:640px;}

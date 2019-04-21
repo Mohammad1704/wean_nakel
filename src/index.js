@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './custom.scss';
 import App from './App';
-import Map from './components/suggestion'
+import Map from './components/map'
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Suggestion />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
