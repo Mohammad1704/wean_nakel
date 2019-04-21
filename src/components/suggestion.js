@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-// import "../../src/custom.scss";
+import React, { Component } from 'react'
+import Map from './map';
+import "../../src/custom.scss";
 export default class Suggestion extends Component {
   state = {
     shop: null //
   };
 
+  
   componentDidMount() {
     // fix CORB and CORS issues
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
@@ -26,8 +28,8 @@ export default class Suggestion extends Component {
         {this.state.shop ? (
           <div>
             <h1> {this.state.shop.name}</h1>
-         
-            {/* <button className="btn" onClick={() => this.changeActivePage('Suggestion')} > <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button> */}
+         <Map/>
+            <button className="btn" onClick={() => this('')} > <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
 
          </div>
 

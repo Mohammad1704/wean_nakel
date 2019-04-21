@@ -13,7 +13,7 @@ export default class App extends Component {
     activePage: 'main'
   };
 
-  changeActivePage  = activePage => {
+  changeActivePage  = activePage => {  //chang to suggestion page 
     this.setState({ activePage });
   };
 
@@ -40,7 +40,7 @@ export default class App extends Component {
                 أقتراح
               </div> */}
            
-                <button className="btn" onClick={() => this.changeActivePage ('Suggestion')} > <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
+                <button className="btn" onClick={() => this.changeActivePage ('Suggestion')} > <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
 
                 </div>
                 ) : ( '' )}
@@ -49,7 +49,7 @@ export default class App extends Component {
       <React.Fragment>
 
             <Suggestion changeActivePage ={this.changeActivePage } />
-            <button className="btn" onClick={() => this.changeActivePage ('Suggestion')} > <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
+                {/* <button className="btn" onClick={() => this.changeActivePage ('Suggestion')} > <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button> */}
 
             </React.Fragment>
 
