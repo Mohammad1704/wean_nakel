@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './custom.scss';
 import App from './App';
-import Map from './components/map'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'))

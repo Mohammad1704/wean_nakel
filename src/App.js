@@ -12,7 +12,7 @@ export default class App extends Component {
     activePage: 'main'
   };
 
-  changeActivePage  = activePage => {  //chang to suggestion page 
+  changeActivePage  = activePage => {  //function to chang to suggestion page 
     this.setState({ activePage });
   };
 

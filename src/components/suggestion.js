@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Map from './map';
+import loadingpic from '../images/loading.gif'
 import "../../src/custom.scss";
 import Navigation from './navbar';
 export default class Suggestion extends Component {
   state = {
     isLoading: true,
-    shop: null, //
+    shop: null, 
     error: null
   };
 
@@ -37,18 +37,18 @@ export default class Suggestion extends Component {
     const { isLoading, shop, error } = this.state;
 
   
-    let gmapurl ;
+    let gmapurl ;  //create variable that we will store the new location from the API 
 
     return (  
 
       <React.Fragment>
-      <div>
+           <Navigation />
 
-        
-      <Navigation />
-      {/* // Display a message if we encounter an error */}
+      <div> 
+      {/* // Display a message if we faced an error */}
       {error ? <p>{error.message}</p> : null} 
-      {!isLoading ? ( //  data check if request done
+      {!isLoading ? ( //   check data if it ready 
+      //and take lat and lon from api ,and place it in  embedded google map url
      gmapurl =`https://maps.google.com/maps?q=${this.state.shop.lat}%2C%20${this.state.shop.lon}&t=&z=17&ie=UTF8&iwloc=&output=embed`,
 
         shop ? (
@@ -67,8 +67,8 @@ export default class Suggestion extends Component {
             <button className="btn" onClick={() => this('')} > <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>  أقتراح آخر</button>
 
          </div> ) : ( '')
-):(
-<h3>loading..</h3>
+):(      // show loading icon if there is a delay in data
+<div> <img src={loadingpic}></img>  </div>
   )
       }
       </div>
