@@ -1,0 +1,149 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.navbar-default {
+	background-color: rgba(11, 148, 150, 0.85);
+    border: none;
+    border-radius: 0px;
+/*    height: 65px;*/
+    padding-top: 8px;
+/*
+    direction: rtl;
+    text-align: right;
+    
+*/
+}
+
+.navbar-nav > li > a {padding-top:15px !important; padding-bottom:15px !important;}
+.navbar {min-height:65px !important}
+
+/*.navbar .container { height: 65px; }*/
+
+.navbar-default .navbar-brand {
+	color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #ffffff;
+}
+.navbar-default .navbar-text {
+	color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #137a7b;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #ffffff;
+	background-color: #137a7b;
+}
+.navbar-default .navbar-toggle {
+	border-color: #137a7b;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #137a7b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #137a7b;
+    font-size: 18px;
+}
+
+.navbar-default .navbar-link {
+	color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+	color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ecf0f1;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #ffffff;
+		background-color: #137a7b;
+	}
+}
+
+.navbar {
+    z-index: 999;
+}
+
+nav {
+    direction: rtl;
+    text-align: right;
+}
+
+
+.nav-container {
+    color: white;
+    background: rgba(11, 148, 150, 0.76);
+}
+
+.navbar {
+    text-align: center;
+}
+
+#navBar a{
+    cursor: pointer;
+}
+
+.welcome-message-menu {
+    cursor: auto !important;
+}
+
+.menu-seperator {
+    margin-top: 6px;
+    font-size: 18pt;
+    color: rgba(255, 255, 255, 0.51);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-collapse{
+        margin-top: 5px;
+        background: rgba(0, 0, 0, 0.14);
+    }
+    .menu-seperator{
+        display: none;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width: 899px) {
+    .navbar-brand{
+        margin-right: 8%;
+    }
+    .navbar-collapse{
+        margin-left: 6%;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+    .navbar-brand{
+        margin-right: 17%;
+    }
+    .navbar-collapse{
+        margin-left: 15%;
+    }
+}
+@media (min-width: 1201px) {
+    .navbar-brand{
+        margin-right: 25%;
+    }
+    .navbar-collapse{
+        margin-left: 24%;
+    }
+}
+@import './custom.scss';  // import custom edit so navbar.scss will not overwrite  it 

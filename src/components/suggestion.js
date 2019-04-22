@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Map from './map';
 import "../../src/custom.scss";
+import Nav from './navbar';
 export default class Suggestion extends Component {
   state = {
     shop: null //
@@ -25,8 +26,10 @@ export default class Suggestion extends Component {
   render() {
     return (
       <div>
+      <Nav />
         {this.state.shop ? (
           <div>
+
             <h1> {this.state.shop.name}</h1>
          <Map/>
             <button className="btn" onClick={() => this('')} > <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div> أقتراح</button>
