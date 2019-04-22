@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './images/logo.png';
 import './App.css';
 import './custom.scss';
-
 import Suggestion from './components/suggestion';
 
 // import './custom.scss';

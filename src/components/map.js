@@ -2,13 +2,28 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import "../../src/custom.scss";
 
+ import {showLocation} from './suggestion'
 export default class Map  extends React.Component{ 
-    
-    render(){
+    // constructor(){  //maybe this needed 
 
-        let lat = 26.304992246123;
-        let lon = 50.196256356747;
-        const gmapurl =`https://maps.google.com/maps?q=${lat}&t=&z=17&ie=UTF8&iwloc=&output=embed`
+    // // showLocation = (lat,lon) => {
+    // //     let gmapurl =`https://maps.google.com/maps?q=${lat}%2C%20${lon}&t=&z=17&ie=UTF8&iwloc=&output=embed`
+    // //   };
+
+    // }
+    // //   handleClick = (e) => {
+    // //     this.saySomething("element clicked");
+    // //   }
+    
+      
+    
+
+    render(){ 
+        
+        var lat = 26.304992246123;
+        var lon = 50.196256356747;
+        let gmapurl =`https://maps.google.com/maps?q=${lat}%2C%20${lon}&t=&z=17&ie=UTF8&iwloc=&output=embed`
+        
         return (
 
 

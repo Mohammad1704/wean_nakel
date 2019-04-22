@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap.scss';
+@import './custom.scss';
 
 .navbar-default {
 	background-color: rgba(11, 148, 150, 0.85);
@@ -84,7 +85,10 @@ nav {
     direction: rtl;
     text-align: right;
 }
-
+.mr-auto
+{
+color: #ecf0f1;
+}
 
 .nav-container {
     color: white;
