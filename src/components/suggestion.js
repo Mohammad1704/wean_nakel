@@ -83,8 +83,8 @@ export default class Suggestion extends Component {
           <div>
             <Container className='container-fluid'>
            <h1><a className='link-unstyled' href={this.state.shop.link}>  {this.state.shop.name}</a></h1>
-
-  <p className="font-weight-bold "> <span className='rating font-weight-bold' > {this.state.shop.rating}</span> - {this.state.shop.cat} </p>
+{/* show rating and category  */}
+  <p className="font-weight-bold "> <span className='rating lead' > {this.state.shop.rating}</span><span className="font-weight-light small	">/10</span>  {this.state.shop.cat} </p>
             </Container>
          {/* MAP */}  
          <div className="map-responsive"><div className="gmap_canvas">
