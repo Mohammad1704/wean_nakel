@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import './App.css';
 import '../navbar.scss';
 // import '~bootstrap';
+import '../custom.scss';
+
 import {Navbar, Nav} from 'react-bootstrap';
 import logoHeader from '../images/logo-header.png';
 
@@ -16,7 +18,7 @@ return(
 <Navbar.Brand className="navbar-brand" href="#home"><img src={logoHeader}/></Navbar.Brand>
 <Nav className="navbar-link pull-left">
   <Nav.Link className="navbar-link " href="#login"> تسجيل الدخول </Nav.Link>
-  <Nav.Link href="#features">|</Nav.Link>
+  <Nav.Link >|</Nav.Link>
   <Nav.Link href="#Sign-up">إنشاء حساب</Nav.Link>
 </Nav>
 </Navbar>
