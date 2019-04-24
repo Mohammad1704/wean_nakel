@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import loadingpic from '../images/loading.gif';
 import '../../src/custom.scss';
 import Navigation from './navbar';
+import { Container } from 'react-bootstrap';
 
     // fix CORB and CORS issues by using proxy
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
@@ -80,8 +81,10 @@ export default class Suggestion extends Component {
 
         shop ? (
           <div>
-
+            <Container>
             <h1> {this.state.shop.name}</h1>
+
+            </Container>
          {/* MAP */}  
          <div className="map-responsive"><div className="gmap_canvas">
             <iframe width="768" height="500" id="gmap_canvas" src={gmapurl} 
