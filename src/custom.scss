@@ -194,7 +194,6 @@ p {
 
   //MAP 
   .MapPage {
-    background: #e9eded;  // أحذف ذا 
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -217,4 +216,21 @@ p {
     height:100%;
     width:100%;
     position:absolute;
+}
+// show image
+.fixSize{
+  overflow: hidden;
+  height: 230px;
+  max-width: 100%;
+  
+}
+
+.carousel{
+  margin: 5px;
+  float: right !important;
+ 
+  height: 230px;
+  max-width: 30%;
+  position:absolute;  
+z-index:10;  
 }
