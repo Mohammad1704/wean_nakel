@@ -58,24 +58,25 @@
 }
 
 .navbar-default .navbar-link {
+    
 	color: #ecf0f1;
 }
 .navbar-default .navbar-link:hover {
 	color: #ffffff;
 }
 
-@media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: #ecf0f1;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-		color: #ffffff;
-	}
-	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-		color: #ffffff;
-		background-color: #137a7b;
-	}
-}
+// @media (max-width: 767px) {
+// 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+// 		color: #ecf0f1;
+// 	}
+// 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+// 		color: #ffffff;
+// 	}
+// 	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+// 		color: #ffffff;
+// 		background-color: #137a7b;
+// 	}
+// }
 
 .navbar {
     z-index: 999;
@@ -116,39 +117,49 @@ color: #ecf0f1;
     margin-right: 2px;
 }
 
-@media (max-width: 767px) {
-    .navbar-default .navbar-collapse{
-        margin-top: 5px;
-        background: rgba(0, 0, 0, 0.14);
-    }
-    .menu-seperator{
-        display: none;
-    }
-}
-
-
-@media (min-width: 767px) and (max-width: 899px) {
-    .navbar-brand{
-        margin-right: 8%;
-    }
-    .navbar-collapse{
-        margin-left: 6%;
-    }
-}
-@media (min-width: 900px) and (max-width: 1200px) {
-    .navbar-brand{
-        margin-right: 17%;
-    }
-    .navbar-collapse{
-        margin-left: 15%;
-    }
-}
-@media (min-width: 1201px) {
-    .navbar-brand{
-        margin-right: 25%;
-    }
-    .navbar-collapse{
-        margin-left: 24%;
-    }
-}
+// @media (max-width: 767px) {
+//     .navbar-default .navbar-collapse{
+//         color: red;
+//         margin-top: 110px;
+//         background: rgba(0, 0, 0, 0.14);
+//     }
+//     .menu-seperator{
+//         display: none;
+//     }
+// }
 @import './custom.scss';  // import custom edit so navbar.scss will not overwrite  it 
+
+.navbar-toggle.pull-left {
+    margin-left: 15px;
+  }
+  @media (min-width: 768px) {
+    .pull-sm-left {
+      float: left !important;
+    }
+  }
+
+
+// @media (min-width: 767px) and (max-width: 899px) {
+//     .navbar-brand{
+//         margin-right: 8%;
+//     }
+//     .navbar-collapse{
+//         margin-left: 6%;
+//     }
+// }
+// @media (min-width: 900px) and (max-width: 1200px) {
+//     .navbar-brand{
+//         margin-right: 17%;
+//     }
+//     .navbar-collapse{
+//         margin-left: 15%;
+//     }
+// }
+// @media (min-width: 1201px) {
+//     .navbar-brand{
+//         margin-right: 25%;
+//     }
+//     .navbar-collapse{
+//         margin-left: 24%;
+//     }
+// }

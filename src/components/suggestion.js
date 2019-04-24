@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import loadingpic from '../images/loading.gif'
-import "../../src/custom.scss";
+import loadingpic from '../images/loading.gif';
+import '../../src/custom.scss';
 import Navigation from './navbar';
 
     // fix CORB and CORS issues by using proxy
@@ -83,7 +83,7 @@ export default class Suggestion extends Component {
 
             <h1> {this.state.shop.name}</h1>
          {/* MAP */}  
-         <div className="mapouter MapPage"><div className="gmap_canvas">
+         <div className="map-responsive"><div className="gmap_canvas">
             <iframe width="768" height="500" id="gmap_canvas" src={gmapurl} 
             frameBorder="0" scrolling="false" marginHeight="0" marginWidth="0">
             </iframe>

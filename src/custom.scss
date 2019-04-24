@@ -14,12 +14,22 @@ body{
  .logo{
      margin-top: 15%
  }
+ h1 {
+  font-size: 5.9vw; //vmax, vw , vh , vmin is responsive text unit https://css-tricks.com/viewport-sized-typography/
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2vmin;
+}
 
 ///start button / suggestion button 
 .btn{
     display: block;
     background: #0b9496;
     font-size: 38px;
+    font-size: 3.3vmax;
     padding: 11px ;
     width: 270px;
     text-align: center;
@@ -128,6 +138,10 @@ body{
     padding: 0px 0px;
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 576px) { 
+      min-width: 100%;
+      
+     }
   }
 //google map button 
 #google-maps-button, #photos-button {
@@ -159,3 +173,16 @@ body{
 .gmap_canvas {overflow:hidden;
   background:none!important;
   height:500px;width:768px;}
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
