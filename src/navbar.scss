@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap.scss';
+// @import './custom.scss';
 @import './custom.scss';
 
 .navbar-default {
@@ -14,14 +15,14 @@
 */
 }
 
-.navbar-nav > li > a {padding-top:15px !important; padding-bottom:15px !important;}
-.navbar {min-height:65px !important}
+// .navbar-nav > li > a {padding-top:105px ; padding-bottom:15px ;}
+// .navbar {min-height:65px }
 
 /*.navbar .container { height: 65px; }*/
 
-.navbar-default .navbar-brand {
-	color: #ecf0f1;
-}
+// .navbar-default .navbar-brand {
+// 	color: #ecf0f1;
+// }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: #ffffff;
 }
@@ -64,7 +65,23 @@
 .navbar-default .navbar-link:hover {
 	color: #ffffff;
 }
+// +++++++++++++++++++++
+.navbar-expand .navbar-nav .nav-link {   //=>   useful my custom
+    color: #ecf0f1;
+    &:hover {
+        color: #fff;
+    }  
+    &:active {
+        text-shadow:#90fbff;
+        color: #ffffff;
+    }  
+}
 
+.navbar-light .navbar-nav .nav-link.active{
+    color: #ffffff;
+    text-shadow:red;
+}
+// ++++++++++++++++++++++++
 // @media (max-width: 767px) {
 // 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
 // 		color: #ecf0f1;
@@ -105,9 +122,6 @@ color: #ecf0f1;
 color: #ecf0f1;
 }
 
-.welcome-message-menu {
-    cursor: auto !important;
-}
 
 .menu-seperator {
     margin-top: 6px;
@@ -127,7 +141,7 @@ color: #ecf0f1;
 //         display: none;
 //     }
 // }
-@import './custom.scss';  // import custom edit so navbar.scss will not overwrite  it 
+//   // import custom edit so navbar.scss will not overwrite  it 
 
 .navbar-toggle.pull-left {
     margin-left: 15px;
