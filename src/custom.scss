@@ -8,7 +8,7 @@ $body-bg: rgb(199, 196, 196);
 
 body{
     font-family: 'El Messiri', sans-serif;
-
+    color: #0b9496;
     text-align: center;
 }
  .logo{
@@ -33,6 +33,7 @@ body{
 
     &:hover {
         background:#40bfc4;
+        color: #fff;
 
     }  
     &:active {
@@ -124,17 +125,37 @@ body{
     background: rgba(255,255,255,0.5);
     min-height: 100%;
     max-width: 60%;
-    padding: 0px 15px;
+    padding: 0px 0px;
     margin-left: auto;
     margin-right: auto;
   }
-
+//google map button 
+#google-maps-button, #photos-button {
+  display: block;
+  background: #fff;
+  font-size: 19px;
+  padding: 11px;
+  width: 250px;
+  margin-right: auto;
+  color: #838383;
+  cursor: pointer;
+  height: 50px;
+  position: relative;
+  top: 210px;
+  border-radius: 30px;
+}
 
 
   //MAP 
   .MapPage {
     background: #e9eded;  // أحذف ذا 
+    background-repeat: no-repeat;
+    background-size: cover;
 
   }
-  .mapouter{position:relative;text-align:right;height:500px;width:640px;}
-.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:640px;}
+  .mapouter{position:relative;text-align:right;height:500px;width:768px;}
+
+
+.gmap_canvas {overflow:hidden;
+  background:none!important;
+  height:500px;width:768px;}
