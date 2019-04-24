@@ -81,16 +81,17 @@ export default class Suggestion extends Component {
 
         shop ? (
           <div>
-            <Container>
-            <h1> {this.state.shop.name}</h1>
+            <Container className='container-fluid'>
+           <h1><a className='link-unstyled' href={this.state.shop.link}>  {this.state.shop.name}</a></h1>
 
+  <p className="font-weight-bold "> <span className='rating font-weight-bold' > {this.state.shop.rating}</span> - {this.state.shop.cat} </p>
             </Container>
          {/* MAP */}  
          <div className="map-responsive"><div className="gmap_canvas">
             <iframe width="768" height="500" id="gmap_canvas" src={gmapurl} 
             frameBorder="0" scrolling="false" marginHeight="0" marginWidth="0">
             </iframe>
-            <h1>map veiw</h1></div> 
+            <h1>جاري التحميل</h1></div> 
             </div>
             
 
