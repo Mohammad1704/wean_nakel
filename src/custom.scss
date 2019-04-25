@@ -6,6 +6,7 @@ $body-bg: rgb(199, 196, 196);
 //import font 
 @import url('https://fonts.googleapis.com/css?family=El+Messiri');
 
+
 body{
     font-family: 'El Messiri', sans-serif;
     color: #0b9496;
@@ -72,6 +73,7 @@ p {
     margin-top: 40px;
     height: 80px;
     border-radius: 30px;
+    
     &:hover {
         background:#40bfc4;
         color: #fff;
@@ -171,7 +173,7 @@ p {
     margin-right: auto;
     @media (max-width: 576px) { 
       min-width: 100%;
-
+      padding: 0px 0px 10%;
      }
   }
 //google map button 

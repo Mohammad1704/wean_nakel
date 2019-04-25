@@ -15,7 +15,7 @@ render(){
 return(
 <React.Fragment>
      <Navbar  className="navbar-default navbar-fixed-top "  >
-<Navbar.Brand className="navbar-brand" href="#home"><img src={logoHeader}/></Navbar.Brand>
+<Navbar.Brand className="navbar-brand mr-auto" href="#home"><img className="ml-auto" src={logoHeader}/></Navbar.Brand>
 <Nav className="navbar-link pull-left">
   <Nav.Link className="navbar-link " href="#login"> تسجيل الدخول </Nav.Link>
   <Nav.Link >|</Nav.Link>

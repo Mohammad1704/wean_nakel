@@ -86,7 +86,7 @@ export default class Suggestion extends Component {
           
           <div>
 
-            <Container className='main-container rounded '>
+            <Container className='main-container rounded shadow-sm'>
            <h1><a className='link-unstyled' href={this.state.shop.link}>  {this.state.shop.name}</a></h1>
 {/* show rating and category  */}
   <p className="font-weight-bold "> <span className='rating lead' > {this.state.shop.rating}</span><span className="font-weight-light small	">/10</span>  {this.state.shop.cat} </p>
