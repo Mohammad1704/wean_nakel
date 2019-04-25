@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap.scss';
+// @import './custom.scss';
+@import './custom.scss';
+
+.navbar-default {
+    z-index: 100;
+    color: #fff;
+	background-color: #0b9496d9;
+    border: none;
+    border-radius: 0px;
+/*    height: 65px;*/
+    padding-top: 8px;
+/*
+    direction: rtl;
+    text-align: right;
+    
+*/
+}
+
+
+// +++++++++++++++++++++
+.navbar-expand .navbar-nav .nav-link {   //=>   useful my custom
+    color: #ecf0f1;
+    &:hover {
+        color: #fff;
+    }  
+    &:active {
+        color: #ffffff;
+    }  
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #ffffff;
+    text-shadow:0 1px 10px #fff;
+}
+// ++++++++++++
+.mr-auto
+{
+color: #ecf0f1;
+}
+
+.nav-container {
+    color: white;
+    background: rgba(11, 148, 150, 0.76);
+}
+
+.navbar {
+    text-align: center;
+}
+
+#navBar a{
+    cursor: pointer;
+color: #ecf0f1;
+}
+.menu-seperator {
+    margin-top: 6px;
+    font-size: 18pt;
+    color: rgba(255, 255, 255, 0.51);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.navbar-toggle.pull-left {
+    margin-left: 15px;
+  }
+  @media (min-width: 768px) {
+    .pull-sm-left {
+      float: left !important;
+    }
+  }
