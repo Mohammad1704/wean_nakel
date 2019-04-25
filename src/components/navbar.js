@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-// import './App.css';
 import '../navbar.scss';
-// import '~bootstrap';
 import '../custom.scss';
 
 import {Navbar, Nav} from 'react-bootstrap';

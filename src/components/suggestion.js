@@ -4,6 +4,7 @@ import '../../src/custom.scss';
 import Navigation from './navbar';
 import { Container } from 'react-bootstrap';
 import CarouselPage from './showImage';
+
     // fix CORB and CORS issues by using proxy
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
       targetUrl ='https://wainnakel.com/api/v1/GenerateFS.php?uid=26.2716025,50.2017993&g%20et_param=value';
@@ -35,9 +36,8 @@ export default class Suggestion extends Component {
         console.log(e);
       });    
   }
-      loadShop()  {
-        this.setState({ isLoading: true });
-     
+      loadShop()  {    //for relode rsults from API and will use it on أقتراح آخر button 
+        this.setState({ isLoading: true });    
        fetch(proxyUrl + targetUrl)
          .then(res => res.json())
          .then(shop => {
@@ -52,7 +52,7 @@ export default class Suggestion extends Component {
   
 
 
-    showLocation = () => {
+    showLocation = () => {  // for use Latitude and longitude API and show it in map  
     var location = `${this.state.shop.lat}%2C%20${this.state.shop.lon}`;
    var gmapurl =`https://maps.google.com/maps?q=${location}&t=&z=17&ie=UTF8&iwloc=&output=embed`;
    return gmapurl;
