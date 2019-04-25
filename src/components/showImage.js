@@ -8,9 +8,9 @@ import img3 from '../images/random3.jpg';
 const CarouselPage = () => {
   return (
     <Carousel>
-  <Carousel.Item>
+  <Carousel.Item className="fixSize">
     <img
-      className="d-block img-thumbnail fixSize rounded-6"
+      className="d-block img-thumbnail "
       src={img1}
       alt="First slide"/>
     <Carousel.Caption>
@@ -18,7 +18,7 @@ const CarouselPage = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block img-thumbnail fixSize rounded"
+      className="d-block img-thumbnail "
       src={img2}
       alt="Third slide" />
     <Carousel.Caption>
@@ -26,7 +26,7 @@ const CarouselPage = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block img-thumbnail fixSize"
+      className="d-block img-thumbnail"
       src={img3}
       alt="Third slide" />
     <Carousel.Caption>
