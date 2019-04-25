@@ -102,7 +102,7 @@ export default class Suggestion extends Component {
 
           {/* show shop images   */}
 
-            <button className="btn" onClick={() => this.loadShop()}> <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>أقتراح آخر</button>
+            <button className="btn mb-4" onClick={() => this.loadShop()}> <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>أقتراح آخر</button>
 
          </div> ) : ( '')
 ):(      // show loading icon if there is a delay in data
