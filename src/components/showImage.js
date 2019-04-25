@@ -5,7 +5,7 @@ import img1 from '../images/random1.jpeg';
 import img2 from '../images/random2.jpg';
 import img3 from '../images/random3.jpg';
 
-const CarouselPage = () => {
+const showShopImage = () => {
   return (
     <Carousel>
   <Carousel.Item className="fixSize">
@@ -36,4 +36,4 @@ const CarouselPage = () => {
   );
 }
 
-export default CarouselPage;
+export default showShopImage;
