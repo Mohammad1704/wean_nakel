@@ -1,45 +1,31 @@
 {
   "name": "ween_nakel",
-  "version": "0.1.0",
-  "private": true,
-  "engines": {
-    "node": "11.9.0",
-    "npm":"6.9.0"
-  },
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
     "express-favicon": "^2.0.1",
+    "express": "^4.16.4",
     "path": "^0.12.7",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "^2.1.8",
+    "bootstrap": "^4.3.1"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad1704/wean_nakel.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@storybook/addon-actions": "^5.0.9",
-    "@storybook/addon-links": "^5.0.9",
-    "@storybook/addons": "^5.0.9",
-    "@storybook/react": "^5.0.9",
-    "babel-loader": "^8.0.5"
-  }
+  "author": "mohammadAlahmari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammad1704/wean_nakel/issues"
+  },
+  "homepage": "https://github.com/Mohammad1704/wean_nakel#readme"
 }
